@@ -5,6 +5,22 @@ body {
   grid-template-rows: 160px 1fr;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+header > :nth-child(2n + 2) {
+  justify-self: end;
+}
+.header-btns {
+  display: flex;
+}
+.header-btns > li {
+  flex: 1;  
+}
+
 nav {
   grid-row: 1 / -1;
 }
